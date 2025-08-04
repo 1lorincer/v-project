@@ -1,18 +1,15 @@
 {
   "compilerOptions": {
-    "outDir": "./build",
-    "noImplicitAny": true,
-    "module": "ESNext",
-    "target": "ESNext",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "isolatedModules": true,
+    "target": "ES2020",
+    "module": "CommonJS", // Важно! Измените на CommonJS
+    "moduleResolution": "node", // Измените на node
+    "allowImportingTsExtensions": false, // Уберите это
+    "noEmit": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
-  },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "ESNext"
-    }
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   }
 }
