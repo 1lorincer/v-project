@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "rspack build",
+    "dev": "rspack serve --env mode=development",
+    "build": "rspack build --env mode=production",
+    "build:dev": "rspack build --env mode=development",
+    "build:analyze": "rspack build --env mode=production --env analyze=true",
+    "start": "rspack serve",
     "type-check": "tsc --noEmit"
   },
   "keywords": [],

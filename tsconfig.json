@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "CommonJS", // Важно! Измените на CommonJS
+    "module": "ESNext", // Важно! Измените на CommonJS
     "moduleResolution": "node", // Измените на node
     "allowImportingTsExtensions": false, // Уберите это
     "noEmit": true,
